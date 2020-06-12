@@ -43,7 +43,7 @@
                         <li><a class="green-text text-darken-4" href="fauna.html"><i
                                     class="green-text text-darken-4 material-icons right">pets</i><b>Fauna</b></a>
                         </li>
-                         <li><a class="green-text text-darken-4" href="mapa.php"><i
+                        <li><a class="green-text text-darken-4" href="mapa.php"><i
                                     class="green-text text-darken-4 material-icons right">pets</i><b>Mapa</b></a>
                         </li>
 
@@ -313,7 +313,8 @@
         <!----------------------------->
         <!----------------------------->
         <!----------------------------->
-        <div class="container white-light z-depth-5" style="border-radius: 30px; background: url('img/FONDOS/linen.png')">
+        <div class="container white-light z-depth-5"
+            style="border-radius: 30px; background: url('img/FONDOS/linen.png')">
             <div class="row center" style="padding: 1%;">
                 <div class="col l12 center">
                     <br>
@@ -453,8 +454,8 @@
             <div class="row center green-text text-darken-4" style="padding: 1%;">
                 <div class="col l12">
                     <br>
-                    <div class="divider"></div>
-                    <h3>Equipo de Trabajo</h3>
+                    <div  class="divider"></div>
+                    <h3> Equipo de Trabajo</h3>
                     <div class="divider"></div>
                 </div>
                 <div class="col l10 offset-l1">
@@ -560,7 +561,8 @@
         <!----------------------------->
         <!----------------------------->
         <!----------------------------->
-        <div class="container white-light z-depth-5" style="border-radius: 30px; background: url('img/FONDOS/linen.png')">
+        <div class="container white-light z-depth-5"
+            style="border-radius: 30px; background: url('img/FONDOS/linen.png')">
             <div class="row center green-text text-darken-4" style="padding: 1%;">
                 <div class="col l12">
 
@@ -667,13 +669,13 @@
             <i class="large material-icons ">more_vert</i>
         </a>
         <ul>
-            <li><a class="btn-floating red" style="background: url('img/FONDOS/linen.png')" href="#"><i
+            <li><a class="btn-floating red" style="background: url('img/FONDOS/linen.png')" href="reserva.html"><i
                         class="material-icons">map</i></a></li>
-            <li><a class="btn-floating yellow" style="background: url('img/FONDOS/linen.png')" href="#"><i
+            <li><a class="btn-floating yellow" style="background: url('img/FONDOS/linen.png')" href="fauna.html"><i
                         class="material-icons">pets</i></a></li>
-            <li><a class="btn-floating light-green darken-3" style="background: url('img/FONDOS/linen.png')" href="#"><i
+            <li><a class="btn-floating light-green darken-3" style="background: url('img/FONDOS/linen.png')" href="flora.html"><i
                         class="material-icons">local_florist</i></a></li>
-            <li><a class="btn-floating light-blue" style="background: url('img/FONDOS/linen.png')" href="#"><i
+            <li><a class="btn-floating light-blue" style="background: url('img/FONDOS/linen.png')" href="locomocion.html"><i
                         class="material-icons">time_to_leave</i></a></li>
         </ul>
     </div>
@@ -735,7 +737,29 @@
     <!---------->
     <!---------->
     <!---------->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAGghVSqs1wOSG-pxvIem7pdIYTvzaNPKg",
+            authDomain: "apptourchile-9286b.firebaseapp.com",
+            databaseURL: "https://apptourchile-9286b.firebaseio.com",
+            projectId: "apptourchile-9286b",
+            storageBucket: "apptourchile-9286b.appspot.com",
+            messagingSenderId: "719313962274",
+            appId: "1:719313962274:web:61fdb0b79deb56d871117b",
+            measurementId: "G-SZGMQD0PNW"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
